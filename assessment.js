@@ -51,23 +51,38 @@ var myArray = [1, 2, 3, 4];
 
 var myArrayCopy = myArray.slice(0);
 
-// #8 Below is a array, myNumbers. Create a function called 'evensOnly' that returns the 'evensArray' of only even numbers
-//DON'T TOUCH THE CODE BELOW
 var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
 //DON'T TOUCH THE CODE ABOVE
-function evensOnly(arr) {
+function evensOnly() {
   // CODE HERE
   var evensArray =[];
 
-  for(var i = 0; i < arr.length; i++){
-      if(arr[i] % 2 === 0){
-        evensArray.push(arr[i]);
+  for(var i = 0; i < myNumbers.length; i++){
+      if(myNumbers[i] % 2 === 0){
+        evensArray.push(myNumbers[i]);
       }
   }
   return evensArray;
 }
 evensOnly(myNumbers);
-// Note **** - I checked the solution in Chrome and I am getting the evens only. 
+
+// // #8 Below is a array, myNumbers. Create a function called 'evensOnly' that returns the 'evensArray' of only even numbers
+// //DON'T TOUCH THE CODE BELOW
+// var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
+// //DON'T TOUCH THE CODE ABOVE
+// function evensOnly(arr) {
+//   // CODE HERE
+//   var evensArray =[];
+
+//   for(var i = 0; i < arr.length; i++){
+//       if(arr[i] % 2 === 0){
+//         evensArray.push(arr[i]);
+//       }
+//   }
+//   return evensArray;
+// }
+// evensOnly(myNumbers);
+// // Note **** - I checked the solution in Chrome and I am getting the evens only. 
 
 
 
